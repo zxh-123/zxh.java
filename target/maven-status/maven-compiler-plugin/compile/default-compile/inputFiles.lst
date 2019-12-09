@@ -1,0 +1,7 @@
+D:\workspace2\Java20191122_struts_spring_hibernate\src\main\java\com\woniu\pojo\Dept.java
+D:\workspace2\Java20191122_struts_spring_hibernate\src\main\java\com\woniu\service\IDeptService.java
+D:\workspace2\Java20191122_struts_spring_hibernate\src\main\java\com\woniu\dao\impl\DeptDAoImpl.java
+D:\workspace2\Java20191122_struts_spring_hibernate\src\main\java\com\woniu\dao\IDeptDAo.java
+D:\workspace2\Java20191122_struts_spring_hibernate\src\main\java\com\woniu\action\DeptAction.java
+D:\workspace2\Java20191122_struts_spring_hibernate\src\main\java\com\woniu\service\ipml\DeptServiceImp.java
+D:\workspace2\Java20191122_struts_spring_hibernate\src\main\java\com\woniu\util\HibernateUtil.java

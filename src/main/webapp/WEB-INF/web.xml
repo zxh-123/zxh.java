@@ -1,0 +1,28 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <!-- tomcat启动时，先加载web.xml,而应该先启动ApplicationContext对象，将各个类由spring IoC管理，所以将以下代码写入 -->
+  <context-param>
+      
+	  <param-name>contextConfigLocation</param-name>
+	  <!-- web.xml和 applicationContext.xml路径不一样，定位不到一起，所以给前面加上classPath-->
+	  <param-value>classPath:applicationContext.xml</param-value>
+  </context-param>
+       <!-- listener必须放到后面 -->
+  
+  <filter>
+      <filter-name>struts2</filter-name>
+      <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+  </filter>
+  <filter-mapping>
+	  <filter-name>struts2</filter-name>
+	  <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <listener>
+ 	  <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+</web-app>
